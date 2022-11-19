@@ -1,2 +1,3 @@
 # eClinic
-⚕ e-Clinic open sorce platform with vue and nest js
+
+⚕ e-Clinic open source platform with vue and nest js
