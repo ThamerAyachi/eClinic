@@ -6,6 +6,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { EmergencyContactEntity } from './EmergencyContactEntity';
+import { MedicalInformationEntity } from './MedicalInformationEntity';
 import { ProfileEntity } from './ProfileEntity';
 
 @Entity({ name: 'patient' })
@@ -26,4 +27,8 @@ export class PatientEntity {
   @OneToOne(() => EmergencyContactEntity)
   @JoinColumn()
   emergencyContact: EmergencyContactEntity;
+
+  @OneToOne(() => MedicalInformationEntity)
+  @JoinColumn()
+  medicalInformation: MedicalInformationEntity;
 }
