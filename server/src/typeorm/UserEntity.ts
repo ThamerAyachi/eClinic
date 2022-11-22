@@ -19,6 +19,9 @@ export class UserEntity {
   @Column()
   password: string;
 
+  @Column()
+  role: string;
+
   @Column({ type: 'datetime', name: 'create_at' })
   createAt: Date;
 
