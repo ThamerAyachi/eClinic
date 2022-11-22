@@ -8,8 +8,8 @@ import {
 import { EmergencyContactEntity } from './EmergencyContactEntity';
 import { ProfileEntity } from './ProfileEntity';
 
-@Entity({ name: 'doctor' })
-export class DoctorEntity {
+@Entity({ name: 'user' })
+export class UserEntity {
   @PrimaryGeneratedColumn({ type: 'bigint' })
   id: number;
 
