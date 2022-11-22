@@ -5,7 +5,7 @@ import {
   MinLength,
 } from 'class-validator';
 
-export class emergencyContactCreateDto {
+export class EmergencyContactCreateDto {
   @IsNotEmpty()
   @MinLength(3)
   @MaxLength(100)
